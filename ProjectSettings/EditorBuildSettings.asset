@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/UiScenes/TitleScreen.unity
     guid: ce3f852853f994bf5836effaab3dfe0b
   - enabled: 1
+    path: Assets/Scenes/UiScenes/Cutscenes/Cutscene1.unity
+    guid: 989ccc9b85cfc474187a1034da6f8baf
+  - enabled: 1
     path: Assets/Scenes/IntroLevel.unity
     guid: 999884595971b7b4cbbe539879d6ecfd
   - enabled: 1
