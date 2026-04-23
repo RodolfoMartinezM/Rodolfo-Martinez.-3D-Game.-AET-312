@@ -84,6 +84,8 @@ GameObject:
   - component: {fileID: 482691966953260959}
   - component: {fileID: 201408194053158041}
   - component: {fileID: 7289343630389089196}
+  - component: {fileID: 2362786907168207823}
+  - component: {fileID: 8830370339232092324}
   m_Layer: 4
   m_Name: Water
   m_TagString: Untagged
@@ -199,6 +201,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buoyancy: 15
   damping: 4
+--- !u!114 &2362786907168207823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920882392306381665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5d8de15459d4d3b9125242c3a14fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Trigger
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8830370339232092324}
+        m_TargetAssemblyTypeName: ObjectDestroyer, Assembly-CSharp
+        m_MethodName: RespawnPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    triggerExitEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  triggerableByPlayer: 1
+  triggerableByObject: 0
+  triggerableByTaggedObject: 0
+  objectTag: 
+  numberOfUses: -1
+  drawTriggerArea: 1
+  drawTriggerLines: 1
+  triggerAreaColor: {r: 0, g: 1, b: 0, a: 0.5}
+  consoleLogOnTrigger: 0
+--- !u!114 &8830370339232092324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920882392306381665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6620ca506a3e54baea4d4fc1d4542d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectDestroyer
+  consoleLog: 0
 --- !u!1 &7121283299105528522
 GameObject:
   m_ObjectHideFlags: 0
